@@ -168,8 +168,8 @@ lst = [10, 20, 30, 40]
 lst.append(50) # lst är nu [10, 20, 30, 40, 50]
 lst.remove(30) # lst är nu [10, 20, 40, 50]
 del(lst[1])    # lst är nu [10, 40, 50]
-lst.pop()      # lst är nu [10, 30]
-a = lst.pop()  # a är nu 30, lst är nu [10]
+lst.pop()      # Returnerar 50, lst är nu [10, 40]
+a = lst.pop()  # a är nu 40, lst är nu [10]
 ```
 
 ### Sortering av en lista
