@@ -18,7 +18,7 @@ En variabel är ett namn med ett värde knutet till sig. En variabel är av en s
 pris    = 10                # Heltal (int), utan decimalpunkt
 sträcka = 4.5               # Flyttal (float), med decimalpunkt
 namn    = "Ada"             # Sträng (str)
-game_on = True              # Boolesk variabel (bool), kan anta värdena True och False
+is_game_on = True           # Boolesk variabel (bool), kan anta värdena True och False
 even5   = [2, 4, 6, 8, 10]  # Lista (list)
 ```
 
