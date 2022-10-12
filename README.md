@@ -181,6 +181,24 @@ lst.sort()  # Returnerar inget, lst är ändrad till [-1, 3, 5, 8, 10]
 lst.sort(reverse=True) # lst är nu [10, 8, 5, 3, -1]
 ```
 
+## Strängar och strängmetoder
+En sträng (datatyp `str`) kan i flera flera fall hanteras som en lista. Exempel: `str1 = "abc 123"`. Då gäller att `str1[1]` innehåller `"b"` och `str1[-1]` innehåller `"3"`. Däremot går det inte att utföra `str1[-1] = 4`; det ger ett felmeddelande eftersom strängar inte är muterbara. Antalet tecken i en sträng erhålls på samma sätt som antalet element i en lista med funktionen `len`; t ex ger `len(str1)` returvärdet `7`.
+
+**Delsträngar** fungerar på samma sätt som att komma åt delar av en lista; se rubriken Listor, underrubrik Åkomst av element ovan.
+
+### Strängmetoder
+I följande exempel är följande deklaration gjord: `str1 = "Detta är en sträng som består av 42 tecken"`
+
+| Metod | Exempel | Resultat| Kommentar|
+| ------ | ------ | ------ |------|
+|`.count()`| `str1.count("e")` |`2`|Ger antalet tecken av den specificerade sorten. Det går även att söka på en följd av tecken, då måste hela följden matchas för att räknas|
+|`.upper()`|`str1.upper()`|`"DETTA ÄR EN STRÄNG SOM BESTÅR AV 42 TECKEN"`|Returnerar strängen, där de alfanumeriska tecknen är versaler. `str1` är oförändrad.|
+|`.lower()`|`str1.lower()`|`"detta är en sträng som består av 42 tecken"`|Returnerar strängen, där de alfanumeriska tecknen är gemener. `str1` är oförändrad.|
+|`.title`|`str1.title()`|`"Detta Är En Sträng Som Består Av 42 Tecken"`|Konverterar det första tecknet i varje ord till versal. `str1` är oförändrad.|
+|`.strip`|`str1.strip()`|`"Detta är en sträng som består av 42 tecken"`|Tar bort mellanslag i början och i slutet av strängen (finns inga sådana i den aktuella strängen). `str1` är oförändrad.|
+|.replace()|`str1.replace("42", "många")`|`"Detta är en sträng som består av många tecken"`|Ersätter ett tecken, eller en följd av tecken, med andra tecken. `str1` är oförändrad.|
+|`.split()`|`str1.split()`|`['Detta', 'är', 'en', 'sträng', 'som', 'består', 'av', '42', 'tecken']`|Gör om strängen till ord i en lista. `str1` är oförändrad.|
+
 ## Funktioner
 En funktion i är ett kodblock som kan anropas och processas som en separat del i programmet. Den kan, men behöver inte, returnera ett värde (tal, sträng, lista,...).
 
